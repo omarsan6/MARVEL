@@ -18,7 +18,7 @@ export default function buscador(){
 
             try {
 
-                $oval.innerHTML = `<img src=../../assets/oval.svg></img>`
+                $oval.innerHTML = `<img src=../../assets/oval.svg srcset=../../assets/oval.svg></img>`
 
                 let res = await fetch(url)
                 let json = await res.json()
