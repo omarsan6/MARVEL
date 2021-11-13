@@ -255,7 +255,16 @@ h1{
     display:inline-block;
     outline: none;
     width: 85%;
-    height: 40px;
+    height: 60px;
+}
+
+.nombre{
+    background-color: white;
+    border: none;
+}
+
+.nombre::placeholder{
+    color: rgb(116, 114, 114);
 }
 
 .enviar{
