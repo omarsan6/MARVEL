@@ -259,12 +259,13 @@ h1{
 }
 
 .nombre{
-    background-color: white;
+    color: white;
     border: none;
+
 }
 
 .nombre::placeholder{
-    color: rgb(116, 114, 114);
+    color: rgb(199, 194, 194);
 }
 
 .enviar{
