@@ -12,7 +12,7 @@ export default function buscador(){
         e.preventDefault()
 
         let nombre = $result.value
-        let url = `http://gateway.marvel.com/v1/public/characters?ts=1&name=${nombre}&apikey=${api}&hash=${hash}`
+        let url = `https://gateway.marvel.com/v1/public/characters?ts=1&name=${nombre}&apikey=${api}&hash=${hash}`
 
         if(nombre){
 
