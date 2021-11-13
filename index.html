@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="header__links">
+            <label id="check" class="checkbtn">
+                <i class="icon-menu"></i>
+            </label>
+
+            <a href="#header" class="enlace">
+                <img loading="lazy" src="assets/logo.png" alt="logo" class="logo">
+                <p class="header__text">Buscador</p>
+            </a>
+
+            <ul class="ul">
+                <li class="active"><a href="#header" class="header__link" id="header__link">Inicio</a></li>
+                <li><a href="#buscador" class="header__link">Buscador</a></li>
+                <li><a href="#footer" class="header__link">Contactame</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio">
+            <article class="inicio__izquierda">
+                <div class="titulos">
+                    <h1>Una forma de buscar tus personajes favoritos</h1>
+                    <h3 class="titulos__sub">Descubre lo mejor de tus personajes favoritos</h2>
+                    <h3 class="titulos__sub">¿Estas listo para la acción?</h3>
+                </div>
+                <img src="assets/tela2.png" alt="telaraña" class="fondo2" loading="lazy">
+                <div class="btn">
+                    <a href="#buscador" class="inicio__btn">Comienza</a>
+                </div>
+            </article>
+            <article class="inicio__derecha">
+                <div class="inicio__subtitle">
+                    <h3 class="subtitle">La mejor forma de buscar personajes de los comics</h3>
+                </div>
+                <div class="clip">
+                    <div class="inicio__imgs">
+                        <img src="assets/1.jpg" alt="ironman" class="inicio__img iron" loading="lazy">
+                        <img src="assets/2.jpg" alt="loki" class="inicio__img loki" loading="lazy">
+                    </div>
+                </div>
+                <div class="clip2"></div>
+            </article>
+        </section>
+
+        <section class="buscador" id="buscador">
+            <form action="" id="form" class="form">
+                <h3 class="subtitle">Buscador</h3>
+                <input type="text" placeholder="Personaje a buscar" id="nombre">
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+            <div class="oval"></div>
+            <div class="tar">
+            </div>
+
+        </section>
+
+        <h3 class="subtitle f">Contactame</h3>
+        <footer class="footer" id="footer">
+
+            <article class="footer__contacto">
+                <div class="enlace2">
+                    <img loading="lazy" src="assets/logo.png" alt="logo" class="logo">
+                    <p class="header__text">Buscador</p>
+                </div>
+                <div class="contacto">
+                    <p class="contacto2">omarlev8@gmail.com</p>
+                    <p class="contacto2">Omar Sánchez Santana</p>
+                    <address class="contacto2">Cunduacan, Tabasco</address>
+                </div>
+            </article>
+
+            <article class="footer__redes">
+                <h2 class="footer__sub">Redes sociales</h2>
+                <div class="redes">
+                    <a href="https://www.youtube.com/channel/UCRHZ9Aso8g-KkD0rBMRtBWw" target="_blank" class="icon-youtube-play red"></a>
+                    <a href="https://www.linkedin.com/in/omar-s%C3%A1nchez-santana-47a571200/" target="_blank" class="icon-linkedin red"></a>
+                    <a href="https://github.com/omarsan6" target="_blank" class="icon-github-circled red"></a>
+                </div>
+            </article>
+            <article class="footer__info">
+                <h2 class="footer__sub">Acerca de mi</h2>
+                <p class="descripcion">Hola, soy un desarrollador web que le gusta estar experimentado cosas nuevas, en este proyecto se pueden buscar personajes de esta compañía, sirviendo para adentrarme en el mundo del desarrollo web moderno, con buenas prácticas y código puro. Espero pueda servirte de ayuda, cualquier contacto conmigo, aquí están mis redes sociales, nos vemos, Junior.</p>
+            </article>
+        </footer>
+
+
+    </main>
+
+    <template id="show-template">
+        <article id="tarjeta" class="tarjeta">
+            <img class="tarjeta__img">
+            <h4 class="tarjeta__personaje"></h4>
+            <p class="tarjeta__descripcion"></p>
+            <a target="_blank" class="tarjeta__enlace">Ver mas</a>
+            <small></small>
+        </article>
+    </template>
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
